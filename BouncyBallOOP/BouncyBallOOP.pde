@@ -1,11 +1,29 @@
+
 Ball b;                //declare a new ball called b
+Ball c;
+Ball d;
+
 
 void setup() {
-  size(1600, 1200);
-  b = new Ball();      //initialize b as a new object of the Ball class
+  size(800, 600);
+  b = new Ball(5, 30);      //initialize b as a new object of the Ball class
+  c = new Ball(5, 30);
+   d = new Ball(5, 30);
+ 
 }
 
 void draw() {
-  background(0);
-  b.display();         //call b's display() method
+  //background(0);
+  fill(0, 10);
+  rect(0, 0, width, height);
+  b. move();
+  b.center();
+  b.display();  //call b's display() method
+  c. move();
+  c.center();
+  c. display();
+  d. move();
+  d.center();
+  d. display();
+  
 }
