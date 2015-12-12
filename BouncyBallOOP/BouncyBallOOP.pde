@@ -1,29 +1,24 @@
 
+int count = 15;
+= new Ball [count]; 
 Ball b;                //declare a new ball called b
-Ball c;
-Ball d;
+
 
 
 void setup() {
-  size(800, 600);
-  b = new Ball(5, 30);      //initialize b as a new object of the Ball class
-  c = new Ball(5, 30);
-   d = new Ball(5, 30);
- 
+  for (int i=0; i < count; i++) {
+    size(1400, 1000);
+    b = new Ball;      //initialize b as a new object of the Ball class
+  }
 }
 
 void draw() {
   //background(0);
-  fill(0, 10);
-  rect(0, 0, width, height);
-  b. move();
-  b.center();
-  b.display();  //call b's display() method
-  c. move();
-  c.center();
-  c. display();
-  d. move();
-  d.center();
-  d. display();
-  
+  for (int i=0; i < count; i++) {
+    fill(0, 10);
+    rect(0, 0, width, height);
+    b. move();
+    b.center();
+    b.display();  //call b's display() method
+  }
 }
